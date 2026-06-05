@@ -1,4 +1,4 @@
-function greet({name= "Anubhav"}={}){
+function greet(name= "Anubhav"){
     console.log(name);
 }
 greet()
