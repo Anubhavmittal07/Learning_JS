@@ -15,4 +15,7 @@ console.log(chai()); // context rokne ke liye IIFE MEIN pata nahi chalta kahan r
     //Unnaned Parameter IIFE
     console.log(`In Arrow Function ${num}`);
     
-})(10)
+})(10);
+ 
+(()=>{console.log("10")})
+()
