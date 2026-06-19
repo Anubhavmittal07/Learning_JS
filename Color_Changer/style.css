@@ -1,0 +1,28 @@
+h1 {
+    color: blueviolet;
+}
+.button{
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    flex-direction: row;
+    border-style: solid;
+    margin-left:  10px;
+    
+}
+#grey{
+    background-color: grey;
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: blue;
+}
+#purple{
+    background-color: purple;
+}
+body{
+    text-align: center;
+}
+
