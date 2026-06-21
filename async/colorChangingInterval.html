@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript, hasta kae ko hai!!</h1>
+    <button id="strt">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let int;
+    const newColor = function(){
+                const hex="0123456789ABCDEF"
+                
+                let color = "#"
+                for(let i=0;i<6;i++){
+                    let rand = Math.floor(Math.random()*16)
+                    color+=hex[rand]
+                }
+                console.log(color)
+                return color;
+            }
+
+    document.querySelector("#strt").addEventListener("click",function(){
+        int=setInterval(function(){
+            document.querySelector("body").style.backgroundColor=newColor()
+    },1000)
+    })
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearInterval(int)
+    })
+    //clearInterval(interval)
+</script>
+</html>
